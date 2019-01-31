@@ -19,7 +19,13 @@ class ProductProvider extends Component {
 
   render() {
     return (
-      <ProductContext.Provider value={{ ...this.state }}>
+      <ProductContext.Provider
+        value={{
+          ...this.state,
+          handleDetail: this.handleDetail,
+          addToCart: this.addToCart
+        }}
+      >
         {this.props.children}
       </ProductContext.Provider>
     );
