@@ -10,12 +10,12 @@ class ProductProvider extends Component {
   };
 
   setproducts = () => {
-    let products = [];
+    let tempProducts = [];
     storeProducts.forEach(item => {
       const singleItem = { ...item };
-      products = [...products, singleItem];
+      tempProducts = [...tempProducts, singleItem];
     });
-    this.setState({ products });
+    this.setState({ products: tempProducts });
   };
 
   handleDetail = () => {
