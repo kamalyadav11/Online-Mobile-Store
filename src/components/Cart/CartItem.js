@@ -27,6 +27,10 @@ const CartItem = ({ item, value }) => {
             <span className="btn btn-black mx-1" onClick={() => decrement(id)}>
               -
             </span>
+            <span className="btn btn-black mx-1">{count}</span>
+            <span className="btn btn-black mx-1" onClick={() => increment(id)}>
+              +
+            </span>
           </div>
         </div>
       </div>
