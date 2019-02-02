@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import Default from "./components/Default";
 import Details from "./components/Details";
 import Modal from "./components/Modal";
