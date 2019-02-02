@@ -65,6 +65,22 @@ class ProductProvider extends Component {
     this.setState({ modalOpen: false });
   };
 
+  increment = id => {
+    console.log("this is increment");
+  };
+
+  increment = id => {
+    console.log("this is dincrement");
+  };
+
+  removeItem = id => {
+    console.log("removed");
+  };
+
+  clearCart = () => {
+    console.log("cleared");
+  };
+
   render() {
     return (
       <ProductContext.Provider
