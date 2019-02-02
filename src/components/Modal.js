@@ -10,9 +10,9 @@ export default class Modal extends Component {
       <div>
         <ProductConsumer>
           {value => {
-            const { openModal, closeModal } = value;
+            const { modalOpen, closeModal } = value;
             const { img, title, price } = value.modalProduct;
-            if (!openModal) {
+            if (!modalOpen) {
               return null;
             } else {
               return (
