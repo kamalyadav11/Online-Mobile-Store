@@ -69,7 +69,7 @@ class ProductProvider extends Component {
     console.log("this is increment");
   };
 
-  increment = id => {
+  decrement = id => {
     console.log("this is dincrement");
   };
 
